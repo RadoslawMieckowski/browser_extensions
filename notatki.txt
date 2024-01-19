@@ -1,0 +1,23 @@
+ile można mieć service workerów? Jakby co, to service-worker-sidepanel nie jest podpięty do niczego, jego kod jest też w background.js
+https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/cookbook.sidepanel-site-specific
+
+zrób taką, która się podłącza pod notepad'a i wysyła raport i to, co się napisze. Skorzystaj z onConnectNative i connnectNative chrome.runtime API
+
+https://developer.chrome.com/docs/privacy-security/permissions-policy
+https://developer.chrome.com/docs/extensions/reference/api/sidePanel
+https://developer.chrome.com/docs/extensions/reference/api/sidePanel#examples
+https://developer.chrome.com/docs/extensions/develop/ui/add-popup
+
+wstawki ze stooq'a i Angular
+
+https://stackoverflow.com/questions/53029697/how-to-include-library-in-extension-in-chrome	dodawanie bibliotek do wtyczki
+na chromie na pasku trzeba wpisać chrome://extensions i otworzy ci stronę z rozszerzeniami
+
+trzeba przerobić dokumentację od chroma, bo on nie używa 'browser'
+
+widać, że skrypt wczytał i wykonał się wcześniej niż dokument się załadował, bo body jest puste, jak wyświetla się alert
+
+https://developer.chrome.com/docs/extensions/reference/api/runtime#method-getURL	-api doc
+
+runtime.sendMessage() ==> Sends a single message to event listeners within your extension or a different extension.
+tabs.sendMessage() ==>	Sends a single message from the extension's background scripts (or other privileged scripts, such as popup scripts or options page scripts) to any content scripts or extension pages/iframes that belong to the extension and are running in the specified tab.

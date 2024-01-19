@@ -1,0 +1,83 @@
+przydatne linki:
+https://developer.chrome.com/docs/extensions/develop
+
+https://developer.chrome.com/docs/extensions/develop/ui/override-chrome-pages
+https://developer.chrome.com/docs/extensions/develop/ui/add-popup
+https://developer.chrome.com/docs/extensions/reference/api/sidePanel
+https://developer.chrome.com/docs/extensions/reference/api/sidePanel#use-cases
+https://developer.chrome.com/docs/extensions/develop/ui/themes
+
+https://developer.chrome.com/docs/privacy-security/permissions-policy		jak można doczepić div'a do dokumentu?
+"chrome-extension://lbppggdbaeldoidjkdihhheopaigbknf/popup/summary.html"
+https://stackoverflow.com/questions/53029697/how-to-include-library-in-extension-in-chrome	dodawanie bibliotek do wtyczki
+
+pamiętaj o tym, że scoreline-item circle może dotyczyć również lotto plus. Na stronie lotto to chyba te same klasy, trzeba sprawdzić
+
+#__layout > div > div.layout-games > div > div:nth-child(3) > div > div:nth-child(2) > div > div > div:nth-child(1) > div.game-main-box.skip-contrast > div.game-main-body-box > div > div.recent-result-item.Lotto > div > div.result-item__balls-box > div:nth-child(1)
+
+#__layout > div > div.layout-games > div > div:nth-child(3) > div > div:nth-child(2) > div > div > div:nth-child(1) > div.game-main-box.skip-contrast > div.game-main-body-box > div > div.recent-result-item.Lotto > div > div.result-item__balls-box > div:nth-child(2)
+
+
+
+#__layout > div > div.layout-games > div > div:nth-child(3) > div > div:nth-child(2) > div > div > div:nth-child(2) > div > div.game-main-body-box > div > div.recent-result-item.Lotto > div > div.result-item__balls-box > div:nth-child(1)
+
+#__layout > div > div.layout-games > div > div:nth-child(3) > div > div:nth-child(2) > div > div > div:nth-child(2) > div > div.game-main-body-box > div > div.recent-result-item.Lotto > div > div.result-item__balls-box > div:nth-child(2)
+
+nie wiem, dlaczego pierwsze 2 mają klasę skip-contrast a drugie nie...
+
+może zrobie wtyczkę do tej strony dzienne i archiwalne wyniki lotto ...
+
+wracam do głównej strony lotto, bo nie mogę jakoś podmienić zdjęcia
+
+DEBUGOWANIE: najpierw włącz tryb developera na stronie, a dopiero potem klinknij w ikonę rozszerzenia. W Source'ach pojawi się wtedy nowy, wstrzyknięty plik
+
+/*1:"#FF0000",
+	2:"#e9393cc2",
+	3:"#ed686896",
+	4:"#fe7d02",
+	5:"#fe7d02",
+	6:"#f6c900",
+	7:"#f6c90094",
+	8:"#acf600",
+	9:"#acf60094",
+	10:"#00f637",
+	11:"#00f63787",
+	12:"#00f6a8",
+	13:"#00f6a861",
+	14:"#00bbf6",
+	15:"#00bbf68a",
+	16:"#0055f6",
+	17:"#5500f6",
+	18:"#5500f6ba",
+	19:"#5500f654",
+	20:"#b000f6",
+	21:"#b000f682",
+	22:"#b000f682",
+	23:"#e939da",
+	24:"#e93999",
+	25:"#e939998f",
+	26:"#FF8C00",
+	27:"#FFD700",
+	28:"#8A2BE2",
+	29:"#814107",
+	30:"#814107a8",
+	31:"#848484",
+	32:"#8484846b",
+	33:"#000",
+	34:"#8bc34a",
+	35:"#8bc34a5e",
+	36:"#5c6bc0",
+	37:"#26a69a",
+	38:"#ff5722",
+	39:"#ff9422ad",
+	40:"#e91e63",
+	41:"#5e7359",
+	42:"#01aced40",
+	43:"#01aced40",
+	44:"#4caf50b8",
+	45:"#c4efc6b8",
+	46:"#ff8a65",
+	47:"#994759",
+	48:"#ff980070",
+	49:"#01090c29"
+	*/

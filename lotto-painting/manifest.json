@@ -1,0 +1,24 @@
+{
+  "name": "paint the draws",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "paint the draws"
+  },
+  "permissions": ["activeTab", "scripting", "sidePanel"],
+   "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "popup/summary.html" ],
+      "matches": [ "https://*/*" ]
+    }
+  ],
+  "icons": {
+    "48": "circle-x-7.png"
+  }
+}
