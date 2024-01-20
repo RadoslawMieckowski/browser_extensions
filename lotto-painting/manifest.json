@@ -6,9 +6,6 @@
     "default_title": "paint the draws"
   },
   "permissions": ["activeTab", "scripting", "sidePanel"],
-   "side_panel": {
-    "default_path": "sidepanel.html"
-  }
   "background": {
     "service_worker": "background.js"
   },

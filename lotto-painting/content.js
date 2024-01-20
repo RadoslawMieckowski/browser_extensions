@@ -4,7 +4,6 @@
 //  }
 //  window.hasRun = true;
 
-chrome.runtime.reload();	//powinno załadować od nowa wszystko, łącznie z jQuery
 
 //sprawdzenie, czy załadowało jQuery
 jQueryCheck();

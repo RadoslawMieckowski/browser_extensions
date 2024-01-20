@@ -1,5 +1,10 @@
 const LOTTO_RESULTS = 'https://www.lotto.pl/lotto/wyniki-i-wygrane';
 
+// Allows users to open the side panel by clicking on the action toolbar icon
+chrome.sidePanel
+  .setPanelBehavior({ openPanelOnActionClick: true })	// może ustaw jakiś inny behavior
+  .catch((error) => console.error(error));
+
 chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
   if (!tab.url) return;
   const url = new URL(tab.url);
